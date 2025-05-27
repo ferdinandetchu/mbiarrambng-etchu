@@ -55,7 +55,7 @@ export default function HeroSection() {
                         </div>
                         <div className='rounded-xl overflow-hidden bg-primary-dark'>
                             {/* Note: The 'src' attribute below links to a Google Drive viewing page, not a direct image file. This may prevent the image from rendering correctly. */}
-                            <img src="https://drive.google.com/file/d/1F6f0ckc1ki68-rHTgjevU9hphBpC1AMn/view" alt="coding image" />
+                            <img src="/coding_react.gif" alt="coding image" />
                         </div>
                     </div>
                 </div>

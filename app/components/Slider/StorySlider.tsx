@@ -61,7 +61,7 @@ export default function StorySlider() {
           {stories.map((storyItem) => (
             <SwiperSlide key={storyItem.imgUrl}>
                 {/* Assuming StoryCard accepts a prop, e.g., 'story' or 'storyData' */}
-                <StoryCard story={storyItem} />
+                <StoryCard />
             </SwiperSlide>
           ))}
       </Swiper>
