@@ -1,5 +1,5 @@
 'use client'
-import React, { useEffect, useState } from 'react'
+// import React, { useEffect, useState } from 'react'
 import './hero.model.css'
 import StrokeText from '../StrokeText/StrokeText';
 import Chip from '../Chip/Chip';
@@ -8,19 +8,19 @@ import Button from '../Button/Button';
 const skils = ['JavaScript', 'HTML', 'CSS', 'Next.JS', 'React.JS', 'Tailwind', 'Nuxt.JS', 'Vue.JS']
 
 export default function HeroSection() {
-    const [mousePosition, setMousePosition] = useState({ x: null, y: null });
+    // const [mousePosition, setMousePosition] = useState({ x: null, y: null });
     
-    useEffect(() => {
-        const updateMousePosition = (ev: { clientX: any; clientY: any; }) => {
-            setMousePosition({ x: ev.clientX, y: ev.clientY });
-        };
+    // useEffect(() => {
+    //     const updateMousePosition = (ev: { clientX: any; clientY: any; }) => {
+    //         setMousePosition({ x: ev.clientX, y: ev.clientY });
+    //     };
     
-        window.addEventListener('mousemove', updateMousePosition);
+    //     window.addEventListener('mousemove', updateMousePosition);
         
-        return () => {
-            window.removeEventListener('mousemove', updateMousePosition);
-        };
-    }, []);
+    //     return () => {
+    //         window.removeEventListener('mousemove', updateMousePosition);
+    //     };
+    // }, []);
 
     return (
         <div id='hero' className='sm:min-h-screen bg-grad bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-primary via-primary-dark to-primary-dark overflow-hidden'>
