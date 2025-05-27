@@ -24,7 +24,7 @@ export default function StoryCard() {
                 </div>
             </div>
             <p>
-                Taking [Your Name]'s JavaScript class was a game-changer for me. [Your Name] has a knack for breaking down complex concepts into easy-to-understand explanations. The hands-on exercises and real-world examples really solidified my understanding. I left the class feeling confident and ready to tackle JavaScript projects. Highly recommend!
+                Taking Ferdinands JavaScript class was a game-changer for me. Ferdiand has a knack for breaking down complex concepts into easy-to-understand explanations. The hands-on exercises and real-world examples really solidified my understanding. I left the class feeling confident and ready to tackle JavaScript projects. Highly recommend!
             </p>
         </div>
     )
