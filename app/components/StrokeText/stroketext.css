@@ -1,0 +1,21 @@
+svg {
+    position: relative;
+    width: 550px;
+    height: 80px;
+}
+
+svg text {
+    font-size: 50px;
+    font-weight: 900;
+    fill: rgba(0, 0, 0, 0);
+    stroke: #FC9D0B;
+    stroke-linejoin: round;
+    stroke-dasharray: 200;
+    animation: animate 4s linear infinite;
+}
+
+@keyframes animate {
+    100% {
+        stroke-dashoffset: 200;
+    }
+}

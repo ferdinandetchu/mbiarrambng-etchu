@@ -1,0 +1,8 @@
+.pw-animate{
+    animation: mymove 2s linear;
+}
+@keyframes mymove {
+    50% {
+        transform: rotate(180deg);
+    }
+}
