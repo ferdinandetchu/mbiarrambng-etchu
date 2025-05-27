@@ -15,7 +15,15 @@ import 'swiper/css/pagination';
 import 'swiper/css/bundle';
 import StoryCard from '../StoryCard/StoryCard';
 
-const projects = [
+interface Story {
+    imgUrl: string;
+    title: string;
+    name: string;
+    description: string;
+}
+
+// Renamed from 'projects' to 'stories' for clarity
+const stories: Story[] = [
     {
         imgUrl: '/img/bk-socials.png',
         title: 'BK Socials',
@@ -50,9 +58,10 @@ export default function StorySlider() {
       onSlideChange={() => console.log('slide change')}
       onSwiper={(swiper) => console.log(swiper)}
       >
-          {projects.map((project, index) => (
-            <SwiperSlide key={project.imgUrl}>
-                <StoryCard />
+          {stories.map((storyItem) => (
+            <SwiperSlide key={storyItem.imgUrl}>
+                {/* Assuming StoryCard accepts a prop, e.g., 'story' or 'storyData' */}
+                <StoryCard story={storyItem} />
             </SwiperSlide>
           ))}
       </Swiper>

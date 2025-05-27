@@ -15,13 +15,22 @@ import 'swiper/css/pagination';
 import 'swiper/css/bundle';
 import ProjectCard from '../ProjectCard/ProjectCard';
 
-const projects = [
+interface Project {
+    imgUrl: string;
+    title: string;
+    description: string;
+    link: string;
+    skills: string[];
+}
+
+const projects: Project[] = [
     {
         imgUrl: '/img/bk-socials.png',
         title: 'BK Socials',
         description: 'Custom-built SMM panel, tailored to their specific needs, delivering streamlined social media growth solutions.',
         link: '/#',
         skills: ['JavaScript', 'HTML', 'CSS', 'Next.JS', 'React.JS', 'Tailwind', 'Nuxt.JS', 'Vue.JS']
+
     },
     {
         imgUrl: '/img/paveway-academy.png',
@@ -29,6 +38,7 @@ const projects = [
         description: 'Custom-built SMM panel, tailored to their specific needs, delivering streamlined social media growth solutions.',
         link: '/#',
         skills: ['JavaScript', 'HTML', 'CSS', 'Next.JS', 'React.JS', 'Tailwind', 'Nuxt.JS', 'Vue.JS']
+
     },
     {
         imgUrl: '/img/paeway-academy.png',
@@ -36,6 +46,7 @@ const projects = [
         description: 'Custom-built SMM panel, tailored to their specific needs, delivering streamlined social media growth solutions.',
         link: '/#',
         skills: ['JavaScript', 'HTML', 'CSS', 'Next.JS', 'React.JS', 'Tailwind', 'Nuxt.JS', 'Vue.JS']
+
     }
 ]
 
@@ -47,7 +58,7 @@ export default function ProjectSlider() {
       onSlideChange={() => console.log('slide change')}
       onSwiper={(swiper) => console.log(swiper)}
       >
-          {projects.map((project, index) => (
+          {projects.map((project) => (
             <SwiperSlide key={project.imgUrl}>
                 <ProjectCard project={project} />
             </SwiperSlide>
